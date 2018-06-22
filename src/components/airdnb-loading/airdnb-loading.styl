@@ -1,0 +1,39 @@
+@require '../../styles/reset.styl'
+@require '../../styles/color.styl'
+
+:local(.container)
+  width 60px
+  height 20px
+  display flex
+  justify-content space-around
+
+  div
+    width 10px
+    height 10px
+    border-radius 50%
+    background $T50
+    animation-direction alternate
+
+  div:nth-child(1)
+    animation scale 1s infinite 
+
+  div:nth-child(2)
+    animation scale 1s infinite 0.2s
+
+  div:last-child
+    animation scale 1s infinite 0.4s
+
+@keyframes scale {
+  0% {
+    opacity 1
+  }
+  33% {
+    opacity 0.6
+  }
+  66% {
+    opacity 0.3
+  }
+  99% {
+    opacity 1
+  }
+}
