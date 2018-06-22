@@ -1,0 +1,64 @@
+@require '../../styles/reset.styl'
+@require '../../styles/color.styl'
+
+:local(.container)
+  width 60px
+  height 20px
+  display flex
+  justify-content space-around
+
+  div
+    width 12px
+    height 12px
+    border-radius 50%
+    background $T50
+    animation-direction alternate
+
+  div:nth-child(1)
+    animation scale 0.6s infinite 
+    animation-direction alternate
+
+  div:nth-child(2)
+    animation scale 0.6s infinite 0.2s
+    animation-direction alternate
+
+  div:last-child
+    animation scale 0.6s infinite 0.4s
+    animation-direction alternate
+
+
+@keyframes scale {
+  0% {
+    transform scale(1)
+  }
+  10% {
+    transform scale(0.9)
+  }
+  20% {
+    transform scale(0.8)
+  }
+  30% {
+    transform scale(0.7)
+  }
+  40% {
+    transform scale(0.6)
+  }
+  50% {
+    transform scale(0.5)
+  }
+  60% {
+    transform scale(0.4)
+  }
+  70% {
+    transform scale(0.3)
+  }
+  80% {
+    transform scale(0.2)
+  }
+  90% {
+    transform scale(0.1)
+  }
+  100% {
+    transform scale(0)
+  }
+}

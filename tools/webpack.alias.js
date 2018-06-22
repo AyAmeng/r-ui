@@ -8,5 +8,6 @@ module.exports = {
   components: path.resolve(__dirname, '../src/components'),
   router: path.resolve(__dirname, '../src/router'),
   service: path.resolve(__dirname, '../src/service'),
-  example: path.resolve(__dirname, '../src/example')
+  docs: path.resolve(__dirname, '../src/docs-preview'),
+  styles: path.resolve(__dirname, '../src/styles')
 }

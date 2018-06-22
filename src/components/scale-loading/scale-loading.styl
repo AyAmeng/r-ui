@@ -1,0 +1,75 @@
+@require '../../styles/reset.styl'
+@require '../../styles/color.styl'
+
+:local(.custom)
+  width: 20px  
+  height: 20px
+
+:local(.wrap)
+  position relative
+
+  width 20px  
+  height 20px
+
+  border-radius 50%
+
+:local(.inSide)
+  position absolute
+
+  width 20px
+  height 20px
+
+  border-radius 50%
+  background $T50
+
+  animation scale 1.2s ease-in-out infinite
+
+:local(.outSide)
+
+  position absolute
+
+  width 20px
+  height 20px
+
+  border-radius 50%
+  background $T50
+  opacity 0.5
+
+  // NOTICE
+ // animation scale 1.5s infinite 0.75s // name duration timeFunction delay
+
+@keyframes scale {
+  0% {
+    transform scale(0)
+  }
+  10% {
+    transform scale(0.2)
+  }
+  20% {
+    transform scale(0.4)
+  }
+  30% {
+    transform scale(0.6)
+  }
+  40% {
+    transform scale(0.8)
+  }
+  50% {
+    transform scale(1)
+  }
+  60% {
+    transform scale(0.8)
+  }
+  70% {
+    transform scale(0.6)
+  }
+  80% {
+    transform scale(0.4)
+  }
+  90% {
+    transform scale(0.2)
+  }
+  100% {
+    transform scale(0)
+  }
+}

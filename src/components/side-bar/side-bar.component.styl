@@ -1,0 +1,23 @@
+@require '../../styles/reset.styl'
+@require '../../styles/color.styl'
+
+:local(.container)
+  border-right: 0.5px solid #eee
+  width: 100px
+  display: flex
+  flex-direction: column
+  padding:10px;
+  text-align: center
+  font-size: 20px
+
+:local(.item)
+  text-overflow ellipsis
+  white-space nowrap
+  padding 10px
+  border-bottom: 0.5px solid #eee
+  cursor pointer
+  transition: border-color 0.3s ease
+
+:local(.active)
+  color $T50
+  border-bottom: 0.5px solid $T50
