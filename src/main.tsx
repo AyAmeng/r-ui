@@ -1,10 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-import './styles'
+import './styles/index'
 import './common'
 
-import { DocsPreview } from './docs-preview'
+import { DocsPreview } from './docs-preview/index'
 
 if (module.hot) {
   module.hot.accept()

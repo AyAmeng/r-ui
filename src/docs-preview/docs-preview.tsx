@@ -2,10 +2,11 @@ import * as React from 'react'
 
 import {
   AirdnbLoading,
+  RainbowLoading,
   IndicatorLoading,
   ScaleLoading,
   SideBarComponent as SideBar
-} from 'components'
+} from '../components/index'
 
 import * as Styles from './docs-preview.styl'
 const items = [
@@ -16,7 +17,7 @@ const items = [
     }
   },
   {
-    name: 'NOTOICE',
+    name: 'NOTICE',
     onClick: () => {
       console.info('hihi')
     }
@@ -55,6 +56,7 @@ export class DocsPreview extends React.PureComponent {
             <ScaleLoading />
             <IndicatorLoading />
             <AirdnbLoading />
+            <RainbowLoading />
           </div>
         </div>
       </React.Fragment>
