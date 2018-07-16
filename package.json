@@ -11,8 +11,9 @@
     "test:lint": "gulp tslint",
     "build:test": "rm -rf ./dist; webpack --config webpack.config.js",
     "dev:test": "webpack-dev-server --config webpack.config.js",
-    "analysis": "webpack --config ./tools/webpack.analyzer.js"
-  },
+    "analysis": "webpack --config ./tools/webpack.analyzer.js",
+	  "test": "jest"
+},
   "devDependencies": {
     "@types/classnames": "^2.2.4",
     "@types/react": "^16.3.13",
@@ -34,6 +35,7 @@
     "html-webpack-harddisk-plugin": "^0.2.0",
     "html-webpack-plugin": "^3.2.0",
     "html-withimg-loader": "^0.1.16",
+    "jest": "^23.4.1",
     "less": "^3.0.2",
     "less-loader": "^4.1.0",
     "mini-css-extract-plugin": "^0.4.0",
